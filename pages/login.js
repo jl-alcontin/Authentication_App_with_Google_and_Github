@@ -105,19 +105,19 @@ export default function Login(){
                 </div>
                 <div className="input-button">
                     <button type='button' onClick={handleGoogleSignin} className={styles.button_custom}>
-                        Sign In with Google <Image src={'/assets/google.svg'} width="20" height={20} ></Image>
+                        Sign In with Google <Image src={'/assets/google.svg'} width="20" height={20} alt={"google"} ></Image>
                     </button>
                 </div>
                 <div className="input-button">
                     <button type='button' onClick={handleGithubSignin} className={styles.button_custom}>
-                        Sign In with Github <Image src={'/assets/github.svg'} width={25} height={25}></Image>
+                        Sign In with Github <Image src={'/assets/github.svg'} width={25} height={25} alt={"github"}></Image>
                     </button>
                 </div>
             </form>
 
             {/* bottom */}
             <p className='text-center text-gray-400 '>
-                don't have an account yet? <Link href={'/register'}><a className='text-blue-700'>Sign Up</a></Link>
+                don&apos;t have an account yet? <Link href={'/register'}><a className='text-blue-700'>Sign Up</a></Link>
             </p>
         </section>
 
