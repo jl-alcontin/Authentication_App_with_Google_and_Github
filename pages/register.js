@@ -34,8 +34,13 @@ export default function Register(){
         await fetch('http://localhost:3000/api/auth/signup', options)
             .then(res => res.json())
             .then((data) => {
-                if(data) router.push('http://localhost:3000')
+                if(data) router.push('http://localhost:3000/')
             })
+        // await fetch('https://authentication-testing.vercel.app/api/auth/signup', options)
+        // .then(res => res.json())
+        // .then((data) => {
+        //     if(data) router.push('https://authentication-testing.vercel.app/')
+        // })
     }
 
     return (
