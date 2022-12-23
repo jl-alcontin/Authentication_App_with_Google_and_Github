@@ -44,14 +44,14 @@ export default function Login(){
 
     // Google Handler function
     async function handleGoogleSignin(){
-        signIn('google', { callbackUrl : "https://localhost:3000/"})
-        // signIn('google', { callbackUrl : "https://authentication-testing.vercel.app/"})
+        // signIn('google', { callbackUrl : "https://localhost:3000/"})
+        signIn('google', { callbackUrl : "https://authentication-testing.vercel.app/"})
     }
 
     // Github Login 
     async function handleGithubSignin(){
-        signIn('github', { callbackUrl : "https://localhost:3000/"})
-        // signIn('github', { callbackUrl : "https://authentication-testing.vercel.app/"})
+        // signIn('github', { callbackUrl : "https://localhost:3000/"})
+        signIn('github', { callbackUrl : "https://authentication-testing.vercel.app/"})
     }
 
     return (
